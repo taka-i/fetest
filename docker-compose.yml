@@ -1,0 +1,9 @@
+version: '2'
+services:
+  sqlite:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./exam:/home
+    tty: true
